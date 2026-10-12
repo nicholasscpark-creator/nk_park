@@ -1,0 +1,161 @@
+<!DOCTYPE html> <html lang="ko"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Nicholas Park </title> <meta name="author" content="Nicholas Park"> <meta name="description" content="Nicholas Park (박수창) - mechanical design engineer. Structures, actuators and mechanisms for devices that physically interact with people. "> <meta name="keywords" content="mechanical design, mechanism design, actuator, robotics, medical device, 기구설계"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/nk_park/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/nk_park/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%99%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/nk_park/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://nicholasscpark-creator.github.io/nk_park/"> <script src="/nk_park/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/nk_park/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/nk_park/">About <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/nk_park/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/nk_park/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/nk_park/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/nk_park/activities/">Activities </a> </li> <li class="nav-item"> <a class="nav-link" href="#" id="lang-toggle" role="button" aria-label="Switch language">EN</a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <style>
+  html[data-lang="ko"] .lang-en { display: none !important; }
+  html[data-lang="en"] .lang-ko { display: none !important; }
+</style> <script>
+  (function () {
+    var key = "site-lang";
+    var lang = "ko";
+    try { lang = localStorage.getItem(key) || lang; } catch (e) {}
+    var qs = new URLSearchParams(window.location.search).get("lang");
+    if (qs === "ko" || qs === "en") { lang = qs; try { localStorage.setItem(key, lang); } catch (e) {} }
+    function apply(l) {
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.setAttribute("lang", l);
+      var b = document.getElementById("lang-toggle");
+      if (b) { b.textContent = l === "ko" ? "EN" : "한국어"; }
+    }
+    apply(lang);
+    document.addEventListener("DOMContentLoaded", function () {
+      apply(lang);
+      var b = document.getElementById("lang-toggle");
+      if (!b) return;
+      b.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        lang = lang === "ko" ? "en" : "ko";
+        try { localStorage.setItem(key, lang); } catch (e) {}
+        apply(lang);
+      });
+    });
+  })();
+</script> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">Nicholas</span> Park </h1> <p class="desc"><span class="lang-ko">사람과 물리적으로 상호작용하는 장비의 구조·액추에이터·메커니즘 설계</span><span class="lang-en">Mechanical design of structures, actuators and mechanisms for devices that physically interact with people</span></p> </header> <article> <div class="profile float-right"> <div class="more-info"> <p class="lang-ko">(주)메디칼파크 의료기기장비사업팀 차장</p> <p class="lang-en">Deputy General Manager, Medical Device Equipment Business Team, MedicalPark Co., Ltd.</p> <p>Seongnam, Korea</p> </div> </div> <div class="clearfix"> <div class="lang-ko"> <p>박수창(Nicholas Park)입니다. (주)메디칼파크 의료기기장비사업팀 차장으로, 9년간 의료 영상·수술 장비 6종의 기구를 설계했고 그중 4종은 공인시험과 인증을 거쳐 양산까지 이관했습니다. 호서대학교 로봇공학 학사, 한양대학교 메카트로닉스공학 석사(C&amp;R Lab, 하지 착용로봇)입니다.</p> <h3>경력 여정</h3> <p>석사 과정에서 하지 착용로봇 3종의 인체 결합 구조와 무릎 재활로봇을 설계했고, 2017년 메디칼파크에 입사해 유방용 초음파 영상진단장치 MammouS의 수중 동작 스캐너 모듈을 신규 설계했습니다. 2021년부터 GE Healthcare Korea 유방촬영장비 개발 조직 출신 연구소장과 연구진이 구축한 설계관리 체계에서 MammouS N·2세대의 본체 구조와 액추에이터를 설계했고, 이어 X-ray·초음파 융합 촬영 장치 XammouS의 기구설계 전체와 협동로봇 연동 초음파 진단 장치 US-Bot의 기구부를 맡았습니다. 2025년 11월부터는 복강경용 초음파 수술기 Disealor의 공진 이탈 불량을 해석으로 규명하고 구조를 재설계해 양산 이관을 마쳤습니다.</p> <h3>관심 분야</h3> <p>축의 가동 범위·정지 조건·동력 상실 시 거동을 정한 뒤 그 조건의 부하를 계산해 모터·감속기를 선정하는 액추에이터 통합 설계, 체인 견인식 승강·중공축 회전·리드 스크류 추력 같은 동력 전달 메커니즘 설계, 주조·압출·판금 구조의 강성·안전율 설계와 정적 해석을 다룹니다. 초음파 진동계의 Modal·Harmonic 해석과 인증 규격을 최소 기준으로 삼는 검증 절차 설계가 최근 주제입니다.</p> <p><a href="/nk_park/cv/">CV</a> · <a href="/nk_park/projects/">Projects</a> · <a href="/nk_park/publications/">Publications</a> · <a href="/nk_park/activities/">Activities</a></p> </div> <div class="lang-en"> <p>I am Nicholas Park (박수창), Deputy General Manager on the Medical Device Equipment Business Team at MedicalPark Co., Ltd. Over nine years I have designed the mechanical systems of six medical imaging and surgical devices, four of which I carried through third-party safety testing and regulatory certification into production. I hold a B.S. in Robotics Engineering from Hoseo University and an M.S. in Mechatronics Engineering from Hanyang University (C&amp;R Lab, lower-limb wearable robots).</p> <h3>Career path</h3> <p>During my master's I designed the human-attachment structures of three lower-limb wearable robots and a knee rehabilitation robot. In 2017 I joined MedicalPark and designed, from scratch, the underwater scanner module of the automated breast ultrasound system MammouS. From 2021, within a design-control system built by a research director and engineers who came from GE Healthcare Korea's mammography development organization, I designed the main structure and actuators of MammouS N and MammouS 2, then took on the complete mechanical design of XammouS, a fused X-ray and ultrasound imaging system, and the mechanical subsystem of US-Bot, an ultrasound scanning station built around a collaborative robot arm. Since November 2025 I have resolved a resonance-detuning field failure of the laparoscopic ultrasonic scalpel Disealor through modal analysis and structural redesign, and completed its transfer to production.</p> <h3>Interests</h3> <p>Integrated actuator design (defining axis travel, stop conditions and power-loss behavior, then sizing motors and reducers from the resulting loads); power-transmission mechanisms such as chain-pulled lifts, hollow-shaft rotation and lead-screw thrust drives; stiffness and safety-factor design of cast, extruded and sheet-metal structures with static FEA. Recent topics are modal and harmonic analysis of ultrasonic vibrating systems and verification procedures that use certification standards as the minimum baseline.</p> <p><a href="/nk_park/cv/">CV</a> · <a href="/nk_park/projects/">Projects</a> · <a href="/nk_park/publications/">Publications</a> · <a href="/nk_park/activities/">Activities</a></p> </div> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://www.linkedin.com/in/" title="Linkedin username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/nicholasscpark-creator" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> </div> <div class="contact-note"></div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Nicholas Park. © Nicholas Park. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: October 12, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/nk_park/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/nk_park/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/nk_park/assets/al_math/js/mathjax-setup.js"></script> <script src="/nk_park/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/nk_park/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/nk_park/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/nk_park/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/nk_park/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/nk_park/assets/al_img_tools/js/zoom.js"></script> <script defer src="/nk_park/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/nk_park/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/nk_park/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/nk_park/";
+    },
+  },{id: "nav-cv",
+          title: "CV",
+          description: "경력·학력·교육. 각 프로젝트의 설계 내용은 Projects, 논문·특허는 Publications.Experience, education and training. Design details are under Projects; papers and patents under Publications.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/nk_park/cv/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "제품별 설계 내용 - 종료일 최신순. 각 카드의 상세 페이지에 소제목·그림·설계 판단을 둠.Design work by product, most recent first. Each card opens a page with figures and design decisions.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/nk_park/projects/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "등록특허 3건, 석사 학위논문, 학회 논문 3편(한국정밀공학회 2014 춘계학술대회). 발표: IBEC 2014(광주, 2014.11).Three registered patents, M.S. thesis and three conference papers (KSPE 2014 Spring Conference). Presentation: IBEC 2014 (Gwangju, Nov 2014).",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/nk_park/publications/";
+          },
+        },{id: "nav-activities",
+          title: "Activities",
+          description: "수상, 봉사, 해외 경험, 취미 - 날짜순.Awards, volunteering, time abroad and hobbies, in date order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/nk_park/activities/";
+          },
+        },{id: "projects-disealor",
+          title: 'Disealor',
+          description: "양산 불량을 해석으로 규명하고 구조 재설계로 종결, 공급 중단 없이 양산 이관Field failure traced by FEA, closed by structural redesign, transferred to production without supply interruption",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/disealor/";
+            },},{id: "projects-mammous-gen-1",
+          title: 'MammouS Gen 1',
+          description: "메커니즘·전장부가 물속에서 동작하는 수중 스캐너 모듈An underwater scanner module whose mechanism and electronics operate submerged",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/mammous-1/";
+            },},{id: "projects-mammous-n-2",
+          title: 'MammouS N · 2',
+          description: "리프트·회전 축 액추에이터와 메커니즘, 축 제한 설계, 주조·압출 구조재Lift and rotation actuators and mechanisms, axis-limiting design, cast and extruded structures",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/mammous-n-2/";
+            },},{id: "projects-us-bot",
+          title: 'US-Bot',
+          description: "구매 협동로봇 암을 품는 이동형 본체, 엔드이펙터, 젤 디스펜서 액추에이터A mobile main body around a purchased cobot arm, the end effector, and a gel-dispenser actuator",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/us-bot/";
+            },},{id: "projects-wearable-robots",
+          title: 'Wearable Robots',
+          description: "하지 착용로봇 3종의 인체 결합 구조와 무릎 재활로봇 (한양대 C&amp;amp;R Lab, 석사)Human-attachment structures of three lower-limb wearable robots and a knee rehabilitation robot (Hanyang Univ. C&amp;amp;R Lab, M.S.)",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/wearable-robots/";
+            },},{id: "projects-xammous",
+          title: 'XammouS',
+          description: "부하 계산으로 선정한 6축 액추에이터, 수중 스캐너 모듈, 주조·압출 구조재Six load-sized actuator axes, an underwater scanner module, cast and extruded structures",
+          section: "Projects",handler: () => {
+              window.location.href = "/nk_park/projects/xammous/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/nicholasscpark-creator", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/nk_park/assets/al_search/js/shortcut-key.js"></script> </body> </html>

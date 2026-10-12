@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nicholasscpark-creator.github.io/nk_park/sitemap.xml
