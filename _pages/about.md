@@ -7,7 +7,7 @@ subtitle: >-
 
 profile:
   align: right
-  image: # prof_pic.jpg 를 assets/img/ 에 넣은 뒤 여기에 파일명을 적으면 사진이 표시됨
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p class="lang-ko">(주)메디칼파크 의료기기장비사업팀 차장</p>
