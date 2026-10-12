@@ -2,6 +2,8 @@
 layout: page
 title: Wearable Robots
 description: >-
+  하지 착용로봇 3종의 인체 결합 구조와 무릎 재활로봇 (한양대 C&R Lab, 석사) / Human-attachment structures of three lower-limb wearable robots and a knee rehabilitation robot (Hanyang Univ. C&R Lab, M.S.)
+description_html: >-
   <span class="lang-ko">하지 착용로봇 3종의 인체 결합 구조와 무릎 재활로봇 (한양대 C&amp;R Lab, 석사)</span><span class="lang-en">Human-attachment structures of three lower-limb wearable robots and a knee rehabilitation robot (Hanyang Univ. C&amp;R Lab, M.S.)</span>
 img: # assets/img/wearable-robots.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 6

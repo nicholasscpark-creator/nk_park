@@ -2,6 +2,8 @@
 layout: page
 title: US-Bot
 description: >-
+  구매 협동로봇 암을 품는 이동형 본체, 엔드이펙터, 젤 디스펜서 액추에이터 / A mobile main body around a purchased cobot arm, the end effector, and a gel-dispenser actuator
+description_html: >-
   <span class="lang-ko">구매 협동로봇 암을 품는 이동형 본체, 엔드이펙터, 젤 디스펜서 액추에이터</span><span class="lang-en">A mobile main body around a purchased cobot arm, the end effector, and a gel-dispenser actuator</span>
 img: # assets/img/us-bot.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 3

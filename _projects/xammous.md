@@ -2,6 +2,8 @@
 layout: page
 title: XammouS
 description: >-
+  부하 계산으로 선정한 6축 액추에이터, 수중 스캐너 모듈, 주조·압출 구조재 / Six load-sized actuator axes, an underwater scanner module, cast and extruded structures
+description_html: >-
   <span class="lang-ko">부하 계산으로 선정한 6축 액추에이터, 수중 스캐너 모듈, 주조·압출 구조재</span><span class="lang-en">Six load-sized actuator axes, an underwater scanner module, cast and extruded structures</span>
 img: # assets/img/xammous.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 2

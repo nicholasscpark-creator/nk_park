@@ -2,6 +2,8 @@
 layout: page
 title: MammouS N · 2
 description: >-
+  리프트·회전 축 액추에이터와 메커니즘, 축 제한 설계, 주조·압출 구조재 / Lift and rotation actuators and mechanisms, axis-limiting design, cast and extruded structures
+description_html: >-
   <span class="lang-ko">리프트·회전 축 액추에이터와 메커니즘, 축 제한 설계, 주조·압출 구조재</span><span class="lang-en">Lift and rotation actuators and mechanisms, axis-limiting design, cast and extruded structures</span>
 img: # assets/img/mammous-n-2.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 4

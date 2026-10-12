@@ -2,6 +2,8 @@
 layout: page
 title: MammouS Gen 1
 description: >-
+  메커니즘·전장부가 물속에서 동작하는 수중 스캐너 모듈 / An underwater scanner module whose mechanism and electronics operate submerged
+description_html: >-
   <span class="lang-ko">메커니즘·전장부가 물속에서 동작하는 수중 스캐너 모듈</span><span class="lang-en">An underwater scanner module whose mechanism and electronics operate submerged</span>
 img: # assets/img/mammous-1.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 5

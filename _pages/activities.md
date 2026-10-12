@@ -5,6 +5,8 @@ title: Activities
 nav: true
 nav_order: 4
 description: >-
+  수상, 봉사, 해외 경험, 취미 - 날짜순. / Awards, volunteering, time abroad and hobbies, in date order.
+description_html: >-
   <span class="lang-ko">수상, 봉사, 해외 경험, 취미 - 날짜순.</span><span class="lang-en">Awards, volunteering, time abroad and hobbies, in date order.</span>
 ---
 

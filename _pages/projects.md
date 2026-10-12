@@ -3,6 +3,8 @@ layout: page
 title: Projects
 permalink: /projects/
 description: >-
+  제품별 설계 내용 - 종료일 최신순. 각 카드의 상세 페이지에 소제목·그림·설계 판단을 둠. / Design work by product, most recent first. Each card opens a page with figures and design decisions.
+description_html: >-
   <span class="lang-ko">제품별 설계 내용 - 종료일 최신순. 각 카드의 상세 페이지에 소제목·그림·설계 판단을 둠.</span><span class="lang-en">Design work by product, most recent first. Each card opens a page with figures and design decisions.</span>
 nav: true
 nav_order: 2

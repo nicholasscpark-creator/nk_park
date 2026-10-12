@@ -2,6 +2,8 @@
 layout: page
 title: Disealor
 description: >-
+  양산 불량을 해석으로 규명하고 구조 재설계로 종결, 공급 중단 없이 양산 이관 / Field failure traced by FEA, closed by structural redesign, transferred to production without supply interruption
+description_html: >-
   <span class="lang-ko">양산 불량을 해석으로 규명하고 구조 재설계로 종결, 공급 중단 없이 양산 이관</span><span class="lang-en">Field failure traced by FEA, closed by structural redesign, transferred to production without supply interruption</span>
 img: # assets/img/disealor.jpg 를 넣은 뒤 경로를 적으면 카드 썸네일로 표시됨
 importance: 1

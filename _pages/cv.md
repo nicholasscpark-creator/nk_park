@@ -5,6 +5,8 @@ title: CV
 nav: true
 nav_order: 1
 description: >-
+  경력·학력·교육. 각 프로젝트의 설계 내용은 Projects, 논문·특허는 Publications. / Experience, education and training. Design details are under Projects; papers and patents under Publications.
+description_html: >-
   <span class="lang-ko">경력·학력·교육. 각 프로젝트의 설계 내용은 Projects, 논문·특허는 Publications.</span><span class="lang-en">Experience, education and training. Design details are under Projects; papers and patents under Publications.</span>
 toc:
   sidebar: left
